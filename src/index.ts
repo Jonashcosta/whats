@@ -90,13 +90,13 @@ app.use('/', router);
 //   console.log('post', req.body);
 // });
 
-// app.get('/whatsender', async (req, res) => {
-//   const { query } = req;
-//   const { msg, to } = query;
-//   console.log('get', query);
-//   console.log('msg = \n', msg, to);
-//   return res.status(200).json({ ok: true, msg: msg, to: to });
-// });
+app.get('/whatsender', async (req, res) => {
+  const { query } = req;
+  const { msg, to } = query;
+  console.log('get', query);
+  console.log('msg = \n', msg, to);
+  return res.status(200).json({ ok: true, msg: msg, to: to });
+});
 
 const port = config.port;
 const host = config.ip;

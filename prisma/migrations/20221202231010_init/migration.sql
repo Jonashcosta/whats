@@ -1,2 +1,0 @@
--- AlterTable
-ALTER TABLE `User` MODIFY `stg` INTEGER NULL DEFAULT 0;

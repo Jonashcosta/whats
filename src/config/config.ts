@@ -4,6 +4,6 @@ const config = {
   imprimirStatusContrato: ['Suspenso', 'Ativo'], // 'Suspenso', 'Ativo','Inativo','Cancelado',
 
   port: 5699,
-  ip: '172.16.201.10',
+  ip: 'localhost',
 };
 export default config;
