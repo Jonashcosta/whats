@@ -81,6 +81,7 @@ class stage_2 {
                     value: `Ola Sr  ${res.contratos[0].razaoSocial}\ncpf/cnpj: *${res.contratos[0].cpfCnpj}* \nEscolha um dos Contrato \n`,
                   },
                 ],
+                apikey: process.env.TOKENEVO as string,
               };
 
               res.contratos.forEach((element, index) => {
@@ -160,6 +161,7 @@ class stage_2 {
       return {
         ArrayMSG: {
           msg: resp.msg,
+          apikey: process.env.TOKENEVO as string,
         },
         delay: tempMSG.stage[stageIndex].delay,
       };

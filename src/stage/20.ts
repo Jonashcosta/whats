@@ -60,14 +60,20 @@ class stage_20 {
       } else
         return {
           // contratos Cancelado
-          ArrayMSG: { msg: [{ type: MSG_TYPE.text, value: 'Cancelado' }] },
+          ArrayMSG: {
+            msg: [{ type: MSG_TYPE.text, value: 'Cancelado' }],
+            apikey: '',
+          },
           delay: 2,
         };
     } else {
       const d = getreltString(await a);
       console.log(d);
       return {
-        ArrayMSG: { msg: [{ type: MSG_TYPE.text, value: d }] },
+        ArrayMSG: {
+          msg: [{ type: MSG_TYPE.text, value: d }],
+          apikey: '',
+        },
         delay: 2,
       };
     }
@@ -79,6 +85,7 @@ class stage_20 {
       );
       const titulos: MSGS = {
         msg: [tempMSG.stage[stageIndex].MSGs[0].msg[0]],
+        apikey: '',
       };
       let qtd = 0;
       const datenew = new Date().getTime();

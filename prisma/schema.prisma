@@ -10,14 +10,13 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-
 model User {
-  id    Int     @id @default(autoincrement())
-  from String  @unique
-  notifyName  String?
-  timestamp Int?
-  stg Int?  @default(0)  
-  createdAt DateTime @default(now())
-  expiresAt Int?  
-  updatedAt DateTime? @updatedAt
+  id         Int       @id @default(autoincrement())
+  from       String    @unique
+  notifyName String?
+  timestamp  Int?
+  stg        Int?      @default(0)
+  createdAt  DateTime  @default(now())
+  expiresAt  Int?
+  updatedAt  DateTime? @updatedAt
 }

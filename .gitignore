@@ -3,3 +3,4 @@ dist
 pass.txt
 .env
 messs.ts
+docker-compose.yml

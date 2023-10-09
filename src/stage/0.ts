@@ -29,6 +29,7 @@ class stage_0 {
       ];
     const s: MSGS = {
       msg: [resp.msg[0]],
+      apikey: process.env.TOKENEVO as string,
     };
     const stageIndexMGSs = tempMSG.stage.findIndex(
       (element) => element.id === 1
